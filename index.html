@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+  
+</head>
+<body>
+
+    
+
+
+  <div class="container py-5">
+
+    <div class="form-group">
+        <label>productName :</label>
+        <input  id="productNameInp" type="text" class="my-1   form-control">
+        <div id="alertFirst" class="alert alert-danger d-none">
+            <p>userName must start with uppercase then from three to eight lowercase charachters</p>
+        </div>
+
+
+   
+    </div>
+
+
+
+    <div class="form-group">
+        <label>productPrice :</label>
+        <input id="productPriceInp" type="number" class="my-1 form-control">
+    </div>
+
+
+
+    <div class="form-group">
+        <label>productCategory :</label>
+        <input id="productCategoryInp" type="text" class="my-1 form-control">
+    </div>
+
+
+
+    <div class="form-group">
+        <label>productDesc :</label>
+        <textarea id="productDescInp" type="text" class="my-1 form-control">
+            </textarea>
+
+    </div>
+
+    <button disabled  id="addBtn" class="btn btn-outline-info">add</button>
+</div>
+
+
+
+<div class="container">
+    
+    
+
+    <div class="w-50 m-auto py-3">
+
+    <input id="searchInput" onkeyup="searchProducts(this.value)" placeholder="search" class="form-control">
+        
+
+    </div>
+      
+
+
+
+    <table class="table text-center w-75 m-auto">
+        <thead>
+            <th >index </th>
+            <th data-column="name" data-order="desc" id="nameRoot">ProductName </th>
+            <th data-column="price" data-order="desc">ProductPrice </th>
+            <th data-column="category" data-order="desc">ProductCategory </th>
+            <th>ProductDesc </th>
+            <th>update </th>
+            <th>delete </th>
+
+        </thead>
+        <tbody id="tableBody">
+
+
+        </tbody>
+    </table>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
